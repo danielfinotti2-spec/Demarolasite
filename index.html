@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Um livro de histórias feito para Grazi." />
+    <title>Bem-vinda, Grazi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  </head>
+  <body>
+    <main id="site" class="site">
+      <section class="welcome">
+        <p>UM CANTINHO SÓ SEU</p>
+        <h1>Bem-vinda,<em>Grazi</em></h1>
+        <span class="star one">✦</span><span class="star two">✦</span>
+        <div class="intro">Algumas páginas para guardar o que é bonito.</div>
+        <div class="cat-gallery" aria-label="Gatinhos para Grazi">
+          <img src="img/silly%20catoooo%20%F0%9F%A5%B9%F0%9F%A5%80.jpg" alt="Gatinho laranja de óculos" />
+          <img src="img/GATO%20_%20O%20Mais%20Recomendado%20do%202026.jpg" alt="Gatinho cinza de óculos" />
+          <img src="img/fav%20Cat%20siamois%20%F0%9F%98%9A.jpg" alt="Gatinho siamês" />
+        </div>
+        <button id="open-stories">abrir as histórias <b>↓</b></button>
+      </section>
+      <section class="book" aria-label="Histórias para Grazi">
+        <header><button id="home" aria-label="Voltar ao início">G<span>♥</span>G</button><p>para Grazi, com carinho</p><small id="counter"></small></header>
+        <div class="content">
+          <nav id="chapters" aria-label="Capítulos"><p>CAPÍTULOS</p></nav>
+          <article class="card">
+            <div class="card-top"><span id="chapter-number"></span><span id="story-date"></span></div>
+            <div class="story"><i id="story-note"></i><h2 id="story-title"></h2><span class="divider">— ✦ —</span><p id="story-text"></p><div id="story-media" class="story-media"></div></div>
+            <div class="card-bottom"><button id="previous" aria-label="História anterior">←</button><div id="dots"></div><button id="next" aria-label="Próxima história">→</button></div>
+          </article>
+        </div>
+        <footer>By me Deene Vorcaro ou Joao ou Daniel </footer>
+      </section>
+    </main>
+    <button id="music-toggle" class="music-toggle" aria-label="Tocar música do BTS" title="Tocar música do BTS"><i class="fa-solid fa-music"></i><span>BTS</span></button>
+    <div id="music-player" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
